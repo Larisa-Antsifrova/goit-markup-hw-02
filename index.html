@@ -6,7 +6,7 @@
 		<title>Web Studio</title>
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
@@ -15,16 +15,19 @@
 		<!-- Header -->
 		<header>
 			<nav>
-				<a href="./index.html" lang="en">Web Studio</a>
+				<a href="./index.html" lang="en" class="logo">
+					Web
+					<span class="logo-header">Studio</span>
+				</a>
 
-				<ul>
-					<li><a href="./index.html">Студия</a></li>
+				<ul class="site-nav">
+					<li><a href="./index.html" class="current">Студия</a></li>
 					<li><a href="./portfolio.html" target="_blank">Портфолио</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 
-			<ul>
+			<ul class="contacts">
 				<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
 				<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
 			</ul>
@@ -33,15 +36,15 @@
 		<main>
 			<!-- Hero -->
 			<section>
-				<h1>Эффективные решения для вашего бизнеса</h1>
+				<h1 class="hero">Эффективные решения для вашего бизнеса</h1>
 
-				<button type="button">Заказать услугу</button>
+				<button type="button" class="button">Заказать услугу</button>
 			</section>
 
 			<!-- Our strong sides -->
 			<section>
-				<h2>Наши преимущества</h2>
-				<ul>
+				<h2 hidden>Наши преимущества</h2>
+				<ul class="advantages">
 					<li>
 						<img src="./images/icons/advantages/antenna.svg" alt="Антенна" />
 						<h3>Внимание к деталям</h3>
@@ -75,9 +78,9 @@
 
 			<!-- Our services -->
 			<section>
-				<h2>Чем мы занимаемся</h2>
+				<h2 class="section-title">Чем мы занимаемся</h2>
 
-				<ul>
+				<ul class="services">
 					<li>
 						<img src="./images/services/laptop.jpg" alt="Ноутбук" width="370" />
 						<h3>Десктопные приложения</h3>
@@ -95,8 +98,8 @@
 
 			<!-- Our team -->
 			<section>
-				<h2>Наша команда</h2>
-				<ul>
+				<h2 class="section-title">Наша команда</h2>
+				<ul class="team">
 					<li>
 						<img src="./images/team/nikolai-kucherenko.jpg" alt="Николай Кучеренко" width="270" />
 						<h3>Николай Кучеренко</h3>
@@ -202,7 +205,7 @@
 
 			<!-- Our clients -->
 			<section>
-				<h2>Постоянные клиенты</h2>
+				<h2 class="section-title">Постоянные клиенты</h2>
 				<ul>
 					<li>
 						<a href="#" target="_blank"><img src="./images/icons/clients-logos/logo1.svg" alt="Лого Ya&Co" /></a>
@@ -230,15 +233,20 @@
 
 		<!-- Footer -->
 		<footer>
-			<a href="./" lang="en">Web Studio</a>
-			<address>
-				<ul>
-					<li>г. Киев, пр-т Леси Украинки, 26</li>
-					<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-				</ul>
+			<a href="./" lang="en" class="logo">
+				Web
+				<span class="logo-footer">Studio</span>
+			</a>
+			<address class="address">
+				г. Киев, пр-т Леси Украинки, 26
 			</address>
-			<p><b>Присоединяйтесь</b></p>
+
+			<ul class="contacts-footer">
+				<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+			</ul>
+
+			<p class="call-to-action"><b>Присоединяйтесь</b></p>
 			<ul>
 				<li>
 					<a href="#" target="_blank"><img src="./images/icons/social-media/instagram.svg" alt="Instagram" /></a>
@@ -254,7 +262,7 @@
 				</li>
 			</ul>
 
-			<p><b>Подпишитесь на рассылку</b></p>
+			<p class="call-to-action"><b>Подпишитесь на рассылку</b></p>
 		</footer>
 	</body>
 </html>

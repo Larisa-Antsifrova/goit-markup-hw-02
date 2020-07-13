@@ -5,26 +5,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Portfolio - Web Studio</title>
 		<link rel="stylesheet" href="./css/styles.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<!-- Header -->
 		<header>
 			<nav>
-				<a href="./index.html" target="_blank" lang="en">Web Studio</a>
+				<a href="./index.html" lang="en" class="logo">
+					Web
+					<span class="logo-header">Studio</span>
+				</a>
 
-				<ul>
-					<li><a href="./index.html" target="_blank">Студия</a></li>
-					<li><a href="./portfolio.html">Портфолио</a></li>
+				<ul class="site-nav">
+					<li><a href="./index.html">Студия</a></li>
+					<li><a href="./portfolio.html" target="_blank" class="current">Портфолио</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 
-			<ul>
+			<ul class="contacts">
 				<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
 				<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
 			</ul>
 		</header>
+
 		<main>
 			<h1>Портфолио</h1>
 			<!-- Filter -->
@@ -104,17 +111,23 @@
 				</li>
 			</ul>
 		</main>
+
 		<!-- Footer -->
 		<footer>
-			<a href="./" lang="en">Web Studio</a>
-			<address>
-				<ul>
-					<li>г. Киев, пр-т Леси Украинки, 26</li>
-					<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-				</ul>
+			<a href="./" lang="en" class="logo">
+				Web
+				<span class="logo-footer">Studio</span>
+			</a>
+			<address class="address">
+				г. Киев, пр-т Леси Украинки, 26
 			</address>
-			<p><b>Присоединяйтесь</b></p>
+
+			<ul class="contacts-footer">
+				<li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+			</ul>
+
+			<p class="call-to-action"><b>Присоединяйтесь</b></p>
 			<ul>
 				<li>
 					<a href="#" target="_blank"><img src="./images/icons/social-media/instagram.svg" alt="Instagram" /></a>
@@ -130,7 +143,7 @@
 				</li>
 			</ul>
 
-			<p><b>Подпишитесь на рассылку</b></p>
+			<p class="call-to-action"><b>Подпишитесь на рассылку</b></p>
 		</footer>
 	</body>
 </html>

@@ -11,7 +11,7 @@
 /* Added background color for body and footer to see the text in white */
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: #e0ebeb;
+	background-color: var(--secondary-bg-color);
 }
 footer {
 	background-color: #2f303a;
@@ -28,6 +28,9 @@ li {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+
 	color: var(--accent-color);
 }
 
@@ -45,12 +48,14 @@ li {
 .site-nav a {
 	font-weight: 500;
 	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
 	color: var(--primary-title-color);
 }
 
 .site-nav a:hover,
-.site-nav a:focus,
-.site-nav a.current {
+.site-nav a:focus {
 	color: var(--accent-color);
 }
 
@@ -58,6 +63,9 @@ li {
 .contacts a {
 	font-weight: 500;
 	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
 	color: var(--primary-text-color);
 }
 .contacts a:hover,
@@ -68,15 +76,23 @@ li {
 .hero {
 	font-weight: 900;
 	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 
 	color: var(--primary-white-color);
 
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.button {
+.hero-button {
+	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
+	line-height: 1.87;
+	/* text-align: center; */
+	letter-spacing: 0.06em;
 
 	color: var(--primary-white-color);
 
@@ -87,6 +103,8 @@ li {
 .advantages h3 {
 	font-weight: 700;
 	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
 
 	text-transform: uppercase;
 
@@ -96,6 +114,9 @@ li {
 .advantages p {
 	font-weight: 400;
 	font-size: 14px;
+	line-height: 1.7;
+
+	letter-spacing: 0.03em;
 
 	color: var(--primary-text-color);
 }
@@ -103,13 +124,18 @@ li {
 .section-title {
 	font-weight: 700;
 	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
 
 	color: var(--primary-title-color);
 }
 .services h3 {
 	font-weight: 700;
 	font-size: 14px;
-
+	line-height: 1.14;
+	/* text-align: center; */
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
 	color: var(--primary-white-color);
@@ -118,12 +144,18 @@ li {
 .team h3 {
 	font-weight: 500;
 	font-size: 16px;
+	line-height: 1.19;
+	/* text-align: center; */
+	letter-spacing: 0.03em;
 
 	color: var(--primary-title-color);
 }
 .team p {
 	font-weight: 400;
 	font-size: 16px;
+	line-height: 1.19;
+	/* text-align: center; */
+	letter-spacing: 0.03em;
 
 	color: var(--primary-text-color);
 }
@@ -133,16 +165,19 @@ li {
 .call-to-action {
 	font-weight: 700;
 	font-size: 14px;
-
+	line-height: 1.14;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
 	color: var(--primary-white-color);
 }
 
 .address {
+	font-style: initial;
 	font-weight: 400;
 	font-size: 14px;
-	font-style: initial;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
 
 	color: var(--primary-white-color);
 }
@@ -150,6 +185,13 @@ li {
 .contacts-footer a {
 	font-weight: 400;
 	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
 
 	color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts-footer a:hover,
+.contacts-footer a:focus {
+	color: var(--accent-color);
 }

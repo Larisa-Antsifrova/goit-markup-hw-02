@@ -58,6 +58,11 @@ body {
 	color: var(--accent-color);
 }
 
+.site-nav .current {
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
 /* Contacts in header */
 .contacts a {
 	font-weight: 500;
